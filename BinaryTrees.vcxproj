@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="BinaryTrees.cpp" />
     <ClCompile Include="BTNode.cpp" />
+    <ClCompile Include="TNode.cpp" />
     <ClCompile Include="traversal.cpp" />
   </ItemGroup>
   <ItemGroup>

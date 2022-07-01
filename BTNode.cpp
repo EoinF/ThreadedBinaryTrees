@@ -1,10 +1,5 @@
 #include "BTNode.h";
 
-/**
-    Inserts a node as the right subtree of the given tree
-    If the tree already has a right node, then that right node
-    becomes the right subtree of the new node
-*/
 void insertBTRight(BTNode* tree, BTNode* node) {
     node->right = tree->right;
     tree->right = node;
@@ -12,11 +7,6 @@ void insertBTRight(BTNode* tree, BTNode* node) {
     tree->hasRight = true;
 }
 
-/**
-    Inserts a node as the left subtree of the given tree
-    If the tree already has a left node, then that left node
-    becomes the left subtree of the new node
-*/
 void insertBTLeft(BTNode* tree, BTNode* node) {
     node->left = tree->left;
     tree->left = node;
@@ -29,9 +19,6 @@ void insertBTLeft(BTNode* tree, BTNode* node) {
     }
 }
 
-/**
-    Iteratively build a binary tree from a given string spec
-*/
 BTNode* buildBinaryTree(std::string treeSpec) {
     BTNode* head;
     BTNode* current;

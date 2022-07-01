@@ -15,6 +15,21 @@ struct BTNode {
 	}
 };
 
-void insertBTRight(BTNode* tree, BTNode* node);
+/**
+	Inserts a node as the left subtree of the given tree
+	If the tree already has a left node, then that left node
+	becomes the left subtree of the new node
+*/
 void insertBTLeft(BTNode* tree, BTNode* node);
+
+/**
+	Inserts a node as the right subtree of the given tree
+	If the tree already has a right node, then that right node
+	becomes the right subtree of the new node
+*/
+void insertBTRight(BTNode* tree, BTNode* node);
+
+/**
+	Iteratively build a binary tree from a given string spec
+*/
 BTNode* buildBinaryTree(std::string treeSpec);
