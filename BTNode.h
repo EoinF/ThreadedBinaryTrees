@@ -33,3 +33,8 @@ void insertBTRight(BTNode* tree, BTNode* node);
 	Iteratively build a binary tree from a given string spec
 */
 BTNode* buildBinaryTree(std::string treeSpec);
+
+/**
+	Creates a deep copy of the given binary tree
+*/
+BTNode* copyBinaryTree(char rootValue, BTNode* left = NULL, BTNode* right = NULL);
